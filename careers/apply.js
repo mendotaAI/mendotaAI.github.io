@@ -10,6 +10,9 @@ function setRole(role) {
   roleSelect.removeAttribute('aria-invalid');
 }
 document.querySelectorAll('[data-role]').forEach((a) => a.addEventListener('click', () => setRole(a.dataset.role)));
+const ROLE_SLUGS = { 'research-scientist': 'Research Scientist', 'software-engineer-platform': 'Software Engineer (Platform)' };
+const fromUrl = ROLE_SLUGS[new URLSearchParams(location.search).get('role')];
+if (fromUrl) setRole(fromUrl);
 
 function say(text, isError) {
   status.textContent = text;
