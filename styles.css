@@ -114,6 +114,7 @@ body{margin:0;background:var(--bone);color:var(--void);font-family:var(--font-sa
   .md-scene-copy h1 em{box-shadow:5px 5px 0 var(--blue)}
   .md-card .md-facts{gap:6px 20px;letter-spacing:.1em}
   .md-card .md-facts i{display:none}
+  .md-card-flip>.md-card-art{order:-1;border-left:0!important;border-bottom:2px solid var(--line-strong)!important}
 }
 @media(max-width:400px){.md-nav-cta-long{display:none}}
 @media(prefers-reduced-motion:reduce){.md-scene [data-depth]{transform:none!important}}
