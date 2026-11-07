@@ -3,47 +3,63 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
-  <meta name="theme-color" content="#00b4e7">
+  <meta name="theme-color" content="#101c35">
   <meta name="description" content="Mendota AI — intelligence grounded in the real world. Explore our research and InfraBench, a benchmark for infrastructure agents.">
   <title>Mendota AI — Intelligence, grounded.</title>
   <link rel="icon" href="logo.svg">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;450;500;600;700&family=Fraunces:ital,opsz,wght@0,9..144,500;0,9..144,600;1,9..144,500;1,9..144,600&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css?v=paint-1">
-  <script src="script.js?v=paint-1" defer></script>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;450;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css?v=mural-1">
+  <script src="script.js?v=mural-1" defer></script>
 </head>
-<body>
+<body data-motion="running">
   <a class="skip-link" href="#main">Skip to content</a>
-  <header class="site-header">
-    <a class="brand" href="#" aria-label="Mendota AI home"><img src="logo.svg" alt="" width="36" height="32">mendota<span class="brand-ai">AI</span></a>
-    <nav aria-label="Main navigation"><a href="#research">Research</a><a href="#about">The lab <span aria-hidden="true">↗</span></a></nav>
-  </header>
   <main id="main">
-    <section class="hero" aria-labelledby="hero-title" data-motion="running">
-      <div class="hero-copy">
-        <h1 id="hero-title"><span class="headline-line">The world's</span> <span class="headline-line"><em class="kinetic-word">experience.</em></span> <span class="headline-line">Tomorrow's</span> <span class="headline-line"><em class="kinetic-word">intelligence.</em></span></h1>
-        <p class="intro">Intelligence begins in the real world.<br>We build the benchmarks and foundations<br class="desktop-break"> to bring it there.</p>
-        <a class="text-link" href="#research">Explore our research <span aria-hidden="true">↗</span></a>
+    <section class="opening" aria-labelledby="hero-title">
+      <div class="world" aria-hidden="true">
+        <svg class="world-scene" viewBox="0 0 1600 1050" preserveAspectRatio="xMidYMid slice" fill="none">
+          <path fill="#101c35" d="M0 0h1600v1050H0z"/>
+          <path fill="#163344" d="m0 112 484 193v575H0z"/>
+          <path fill="#12273e" d="m0 112 484 193L0 392z"/>
+          <path fill="#15465a" d="m1312 0 288 0v1050h-288z"/>
+          <path fill="#0d2b44" d="m1312 0-238 398v507l238 145z"/>
+          <path fill="#1d5264" d="M1460 0h140v1050h-140z"/>
+          <path fill="#0e243c" d="m0 700 972-168 628 75v443H0z"/>
+          <path stroke="#426377" stroke-width="1" d="m0 700 972-168 628 75"/>
+          <g class="distant-lines" stroke="#2b5a6e" stroke-width="1"><path d="m680 754 920-74M590 804l1010-52M445 874l1155-38"/></g>
+          <path fill="#0879ad" d="m940 657 660 71v322H355z"/>
+          <path fill="#06aee3" d="m940 657 660 71v82l-881 87z"/>
+          <path fill="#054f83" d="m719 897 881-87v240H355z"/>
+          <g class="water" stroke="#81d5e9" stroke-width="1.4" opacity=".45"><path d="m1038 734 455 12M947 777l571-7M871 816l679-22"/></g>
+          <path fill="#f1f0e7" d="m0 897 940-240-221 240-364 153H0z"/>
+          <path fill="#d9dfdc" d="m0 897 940-240-26 30L0 938z"/>
+          <path fill="#f1f0e7" d="m1600 928-501 122h501z"/>
+        </svg>
+        <div class="monolith-space"><div class="monolith"><span class="monolith-face"></span><span class="monolith-edge"></span></div></div>
+        <div class="world-grain"></div>
       </div>
-      <div class="hero-art">
-        <div class="paint-reveal"><img class="paint-art" src="assets/blue-oil.png" alt="Thick cyan and cobalt oil paint swept into a textured, imperfect square" width="1024" height="1024" fetchpriority="high"></div>
-        <button class="motion-toggle" type="button" aria-label="Pause animation" aria-pressed="false"><span class="motion-icon" aria-hidden="true">Ⅱ</span><span class="motion-label">Pause motion</span></button>
+      <header class="site-header">
+        <a class="brand brand-light" href="#" aria-label="Mendota AI home"><img src="logo.svg" alt="" width="36" height="32">mendota<span class="brand-ai">AI</span></a>
+        <nav aria-label="Main navigation"><a href="#research">Research</a><a href="#about">The lab <span aria-hidden="true">↗</span></a><button class="motion-toggle" type="button" aria-label="Pause animation" aria-pressed="false"><span class="motion-icon" aria-hidden="true">Ⅱ</span><span class="motion-label">Pause</span></button></nav>
+      </header>
+      <div class="hero-copy">
+        <h1 id="hero-title"><span class="title-line">The world's</span> <span class="title-line">experience.</span> <span class="title-line blue-line">Tomorrow's</span> <span class="title-line blue-line">intelligence.</span></h1>
+        <div class="hero-bottom"><p>Intelligence begins in the real world.<br>We build the benchmarks and foundations<br>to bring it there.</p><a class="text-link" href="#research">Explore our research <span aria-hidden="true">↓</span></a></div>
       </div>
     </section>
     <section class="research-section section" id="research" aria-labelledby="research-title">
-      <div class="section-heading"><h2 id="research-title">Research.</h2></div>
-      <article class="research-row">
-        <div class="benchmark-art" aria-hidden="true"><img src="assets/blue-oil.png" alt="" width="160" height="160" loading="lazy"></div>
-        <div class="benchmark-copy"><h3>InfraBench</h3><p>Real infrastructure. Real incidents.<br>A benchmark for AI agents beyond the sandbox.</p><p class="facts">12 incidents <span>·</span> 4 layers <span>·</span> 3 backends</p></div>
-        <a class="benchmark-link" href="https://infraben.ch/" target="_blank" rel="noopener noreferrer"><span>Explore InfraBench</span><span class="arrow" aria-hidden="true">↗</span></a>
+      <div class="section-heading"><h2 id="research-title">Research,<br>out in the world.</h2><p>Real environments.<br>Verifiable progress.</p></div>
+      <article class="research-feature">
+        <div class="benchmark-copy"><h3>InfraBench</h3><p>Real infrastructure. Real incidents.<br>A benchmark for AI agents beyond the sandbox.</p><p class="facts">12 incidents <span>·</span> 4 layers <span>·</span> 3 backends</p><a class="text-link" href="https://infraben.ch/" target="_blank" rel="noopener noreferrer">Explore InfraBench <span aria-hidden="true">↗</span></a></div>
+        <div class="benchmark-window" aria-hidden="true"><div class="window-plane plane-back"></div><div class="window-plane plane-middle"></div><div class="window-plane plane-front"></div><div class="window-core"></div><div class="window-floor"></div></div>
       </article>
     </section>
-    <section class="about section" id="about" aria-labelledby="about-title">
-      <div class="about-label">The lab.</div>
-      <div class="about-content"><h2 id="about-title">The next frontier isn't just<br>what AI knows.<br><span>It's what AI can do.</span></h2><p>Mendota AI explores the space between model capability and real-world consequence. Our starting point: rigorous benchmarks that make that gap visible.</p><p>Based in San Francisco, we're building toward intelligence grounded in the world's experience.</p><div class="team-background"><p>Our core researchers come from <strong>Harvard</strong>, <strong>MIT</strong>, and the <strong>University of Washington</strong>, and include core contributors to <strong>Terminal-Bench</strong>.</p></div></div>
+    <section class="lab-section" id="about" aria-labelledby="about-title">
+      <div class="lab-scenery" aria-hidden="true"><div class="lab-slab"></div><div class="lab-line"></div><div class="lab-cut"></div></div>
+      <div class="lab-content"><p class="section-label">The lab</p><h2 id="about-title">The next frontier<br>is what AI <span>can do.</span></h2><div class="lab-columns"><p>Mendota AI explores the space between model capability and real-world consequence. Our starting point: rigorous benchmarks that make that gap visible.</p><p>Based in San Francisco, we're building toward intelligence grounded in the world's experience.</p></div><div class="team-background"><p>Our core researchers come from <strong>Harvard</strong>, <strong>MIT</strong>, and the <strong>University of Washington</strong>, and include core contributors to <strong>Terminal-Bench</strong>.</p></div></div>
     </section>
   </main>
-  <footer class="site-footer"><div class="footer-top"><a class="brand" href="#"><img src="logo.svg" alt="" width="36" height="32">mendota<span class="brand-ai">AI</span></a><p>The world's experience,<br>powering intelligence.</p><a class="back-top" href="#" aria-label="Back to top">↑</a></div><div class="footer-bottom"><span>© 2026 Mendota AI</span><span>San Francisco, CA</span></div></footer>
+  <footer class="site-footer"><div class="footer-art" aria-hidden="true"><div class="footer-square"></div></div><div class="footer-top"><p>The world's experience,<br>powering intelligence.</p><a href="#" class="back-top">Back to the surface <span aria-hidden="true">↑</span></a></div><a class="footer-wordmark" href="#" aria-label="Mendota AI home"><img src="logo.svg" alt="" width="36" height="32"><span>mendota</span></a><div class="footer-bottom"><span>© 2026 Mendota AI</span><span>San Francisco, CA</span></div></footer>
 </body>
 </html>
