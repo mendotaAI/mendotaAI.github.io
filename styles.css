@@ -102,6 +102,24 @@ body{margin:0;background:var(--bone);color:var(--void);font-family:var(--font-sa
 .md-scene [data-depth]{will-change:transform}
 .md-nav-cta{white-space:nowrap}
 
+.footer-links{display:flex;flex-wrap:wrap;gap:8px 24px}.footer-links a{text-decoration:none}.footer-links a:hover{color:var(--blue)}
+.link-row{display:flex;flex-wrap:wrap;gap:var(--space-3) var(--space-5)}
+
+/* ---- careers ---- */
+.page-hero{background:var(--sky);color:var(--void);padding:var(--space-5) var(--gutter) var(--space-6);position:relative;overflow:hidden;border-top:var(--letterbox) solid #0f0a15}
+.page-hero h1{margin:var(--space-4) 0 0;font-family:var(--font-display);font-size:clamp(64px,10vw,140px);line-height:.88;font-weight:700;letter-spacing:-.02em;text-transform:uppercase}
+.page-hero h1 em{font-style:normal;color:var(--bone);background:var(--void);padding:0 .08em;box-shadow:8px 8px 0 var(--blue)}
+.page-hero p{margin:var(--space-4) 0 0;max-width:520px;font-size:19px;line-height:1.55;font-weight:450}
+.roles{list-style:none;margin:0;padding:0;border-top:2px solid var(--line-strong)}
+.role{border-bottom:2px solid var(--line-strong)}
+.role a{display:grid;grid-template-columns:minmax(0,2.2fr) minmax(0,1fr) minmax(0,1.2fr) auto;align-items:center;gap:var(--space-3);padding:var(--space-4) var(--space-3);color:inherit;text-decoration:none;transition:background .15s,color .15s}
+.role h3{margin:0;font-family:var(--font-display);font-size:clamp(36px,4vw,56px);line-height:.95;font-weight:600;letter-spacing:-.01em}
+.role .meta{font-size:13px;font-weight:500;letter-spacing:.12em;text-transform:uppercase}
+.role .apply{display:inline-flex;align-items:center;gap:16px;padding:12px 20px;background:var(--void);color:var(--bone);border:2px solid var(--line-strong);box-shadow:var(--shadow-cel);font-size:13px;font-weight:500;letter-spacing:.12em;text-transform:uppercase;white-space:nowrap;transition:transform .15s,box-shadow .15s}
+.role a:hover{background:var(--bone-2);color:var(--void)}
+.role a:hover .apply{background:var(--blue);color:var(--void);border-color:var(--blue);transform:translate(-2px,-2px);box-shadow:10px 10px 0 var(--void)}
+.role a:focus-visible{outline:2px solid var(--blue);outline-offset:-4px}
+
 /* ---- phone ---- */
 @media(max-width:800px){
   :root{--header-height:72px;--letterbox:16px}
@@ -114,6 +132,10 @@ body{margin:0;background:var(--bone);color:var(--void);font-family:var(--font-sa
   .md-scene-copy h1 em{box-shadow:5px 5px 0 var(--blue)}
   .md-card .md-facts{gap:6px 20px;letter-spacing:.1em}
   .md-card .md-facts i{display:none}
+  .role a{grid-template-columns:1fr;gap:12px;padding:var(--space-3) 0}
+  .role .apply{justify-self:start;margin-top:8px;box-shadow:4px 4px 0 var(--void)}
+  .page-hero{padding-bottom:170px}
+  .page-hero h1 em{box-shadow:5px 5px 0 var(--blue)}
   .md-card-flip>.md-card-art{order:-1;border-left:0!important;border-bottom:2px solid var(--line-strong)!important}
 }
 @media(max-width:400px){.md-nav-cta-long{display:none}}
