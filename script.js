@@ -1,4 +1,4 @@
-const artwork = document.querySelector('.hero-art');
+const artwork = document.querySelector('.hero');
 const motionButton = document.querySelector('.motion-toggle');
 const reducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)');
 let userPaused = false;
@@ -9,7 +9,7 @@ function syncMotion() {
   motionButton.setAttribute('aria-pressed', String(userPaused));
   motionButton.setAttribute('aria-label', userPaused ? 'Play animation' : 'Pause animation');
   motionButton.querySelector('.motion-icon').textContent = userPaused ? '▷' : 'Ⅱ';
-  motionButton.querySelector('.motion-label').textContent = userPaused ? 'Play' : 'Pause';
+  motionButton.querySelector('.motion-label').textContent = userPaused ? 'Play motion' : 'Pause motion';
 }
 motionButton.addEventListener('click', () => { userPaused = !userPaused; syncMotion(); });
 document.addEventListener('visibilitychange', syncMotion);
