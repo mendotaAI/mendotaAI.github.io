@@ -120,6 +120,22 @@ body{margin:0;background:var(--bone);color:var(--void);font-family:var(--font-sa
 .role a:hover .apply{background:var(--blue);color:var(--void);border-color:var(--blue);transform:translate(-2px,-2px);box-shadow:10px 10px 0 var(--void)}
 .role a:focus-visible{outline:2px solid var(--blue);outline-offset:-4px}
 
+/* work with us */
+.offers{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:var(--space-3)}
+.offer{display:flex;flex-direction:column;color:var(--void);text-decoration:none;background:var(--bone);transition:transform .15s,box-shadow .15s}
+.offer:hover{color:var(--void);transform:translate(-3px,-3px);box-shadow:11px 11px 0 var(--blue)}
+.offer:focus-visible{outline:2px solid var(--blue);outline-offset:4px}
+.offer-art{height:120px}
+.md-card-art .mono-lit{fill:var(--blue-lit)}
+.offer-no{font-family:var(--font-display);font-size:28px;line-height:1;font-weight:600;color:var(--blue)}
+.md-card.offer h3{margin:10px 0 12px;font-size:clamp(30px,2.6vw,40px)}
+.md-card.offer p{flex:1;color:var(--slate)}
+.offer-go{margin-top:var(--space-3);align-self:flex-start;display:inline-flex;align-items:center;gap:24px;border-bottom:2px solid currentColor;padding-bottom:6px;font-size:15px;font-weight:500}
+.offer-go span{font-size:20px;transition:transform .25s}
+.offer:hover .offer-go{color:var(--blue)}
+.offer:hover .offer-go span{transform:translate(3px,-3px)}
+@media(max-width:1100px){.offers{grid-template-columns:repeat(2,minmax(0,1fr))}}
+
 /* apply form */
 .apply-wrap{max-width:1600px;margin:0 auto;display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.3fr);gap:var(--space-5);align-items:start}
 .apply-intro h2{margin:var(--space-4) 0 0;font-family:var(--font-display);font-size:clamp(48px,7vw,96px);line-height:.9;font-weight:600;letter-spacing:-.015em}
@@ -196,6 +212,7 @@ body{margin:0;background:var(--bone);color:var(--void);font-family:var(--font-sa
   .page-hero{padding-bottom:170px}
   .page-hero h1 em{box-shadow:5px 5px 0 var(--blue)}
   .apply-wrap{grid-template-columns:1fr;gap:var(--space-4)}
+  .offers{grid-template-columns:1fr}
   .apply-form{padding:var(--space-3)}
   .field-row{grid-template-columns:1fr}
   .jd-wrap{grid-template-columns:1fr;gap:var(--space-5)}

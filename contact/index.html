@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#f1ae9b">
+  <meta name="description" content="Work with Mendota AI: datasets, custom evaluations, post-training environments and research collaborations.">
+  <title>Contact — Mendota AI</title><link rel="icon" href="../logo.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;600;700&family=DM+Sans:wght@400;450;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../styles.css?v=dusk-7"><script src="../script.js?v=dusk-1" defer></script><script src="contact.js?v=1" defer></script>
+</head>
+<body>
+<a class="skip-link" href="#contact-form">Skip to the form</a>
+<div style="width: 100%; min-height: 100%; background: var(--bone); color: var(--void); font-family: var(--font-sans); display: flex; flex-direction: column;">
+
+  <header id="top" style="background: var(--sky); color: var(--void); padding: 0 var(--gutter);">
+    <div class="md-header" style="max-width: 1600px; margin: 0 auto;">
+      <a class="md-brand" href="../" aria-label="Mendota AI home"><img src="../logo.svg" alt="" width="36" height="32">mendota<span class="md-brand-ai">AI</span></a>
+      <nav class="md-nav" aria-label="Main navigation"><a href="../#research">Research</a><a href="../#work">Work with us</a><a href="../#lab">The lab</a><a href="../careers/">Careers</a><a class="md-nav-cta" href="#contact-form">Contact</a></nav>
+    </div>
+  </header>
+
+  <section class="page-hero" aria-labelledby="contact-title">
+    <div style="max-width: 1600px; margin: 0 auto; position: relative; z-index: 1;">
+      <span class="md-chapter"><span class="md-chapter-title" style="border-left: 0; padding-left: 0;">Contact</span></span>
+      <h1 id="contact-title">Let's build<br><em>together</em></h1>
+      <p>Datasets, custom evaluations, post-training environments or a research collaboration. Tell us what you're working on and we'll get back to you.</p>
+    </div>
+    <svg viewBox="0 0 400 400" aria-hidden="true" style="position: absolute; right: var(--gutter); bottom: -40px; width: clamp(140px, 22vw, 320px); height: auto;">
+      <polygon style="fill: var(--void);" points="120,320 240,332 400,400 230,400"/>
+      <polygon style="fill: var(--blue-deep);" points="220,60 240,70 240,332 220,320"/>
+      <rect style="fill: var(--blue);" x="120" y="60" width="100" height="260"/>
+      <polygon style="fill: var(--blue-lit);" points="120,60 220,60 240,70 140,70"/>
+      <line style="stroke: var(--rim); stroke-width: 2;" x1="121" y1="62" x2="121" y2="318"/>
+    </svg>
+  </section>
+
+  <section id="contact-form" aria-labelledby="form-title" style="padding: var(--space-6) var(--gutter); background: var(--bone-2);">
+    <div class="apply-wrap">
+      <div class="apply-intro">
+        <span class="md-chapter"><span class="md-chapter-title" style="border-left: 0; padding-left: 0;">Get in touch</span></span>
+        <h2 id="form-title">Tell us<br>what you need.</h2>
+        <p>A few lines on your models, your agents and the problem is plenty. Prefer email? Write to <a href="mailto:contact@mendota.ai">contact@mendota.ai</a>. Looking for a job? See <a href="../careers/">open roles</a>.</p>
+      </div>
+      <form class="apply-form md-card" action="https://formspree.io/p/3130094314428824578/f/contact" method="POST" novalidate>
+        <span class="md-card-rim"></span>
+        <input type="hidden" name="_subject" value="Mendota AI: new inquiry">
+        <div class="hp" aria-hidden="true"><label>Leave this empty <input type="text" name="_gotcha" tabindex="-1" autocomplete="off"></label></div>
+        <div class="field-row">
+          <label class="field"><span>Name</span><input name="name" type="text" autocomplete="name" required></label>
+          <label class="field"><span>Work email</span><input name="email" type="email" autocomplete="email" required></label>
+        </div>
+        <label class="field"><span>Organization <em>optional</em></span><input name="organization" type="text" autocomplete="organization"></label>
+        <label class="field"><span>Topic</span>
+          <select name="topic" required>
+            <option value="" disabled selected>What's this about?</option>
+            <option value="Datasets">Datasets</option>
+            <option value="Custom evaluations">Custom evaluations</option>
+            <option value="Post-training">Post-training</option>
+            <option value="Research opportunities">Research opportunities</option>
+            <option value="Something else">Something else</option>
+          </select>
+        </label>
+        <label class="field"><span>Message</span><textarea name="message" rows="6" required></textarea></label>
+        <div class="form-foot">
+          <button class="apply" type="submit">Send message <span aria-hidden="true">↗&#xFE0E;</span></button>
+          <p class="form-status" role="status" aria-live="polite"></p>
+        </div>
+      </form>
+    </div>
+  </section>
+
+  <footer style="background: var(--void-2); color: var(--bone-text); padding: var(--space-5) var(--gutter) var(--space-3);">
+    <div style="max-width: 1600px; margin: 0 auto; display: flex; flex-direction: column; gap: var(--space-4);">
+      <div style="display: flex; flex-wrap: wrap; justify-content: space-between; align-items: center; gap: var(--space-3);">
+        <p style="margin: 0; font-size: 16px; line-height: 1.7;">The world's experience,<br>powering intelligence.</p>
+        <a href="#top" style="display: inline-flex; align-items: center; gap: 24px; font-size: 13px; font-weight: 500; letter-spacing: .12em; text-transform: uppercase; text-decoration: none;">Back to top <span aria-hidden="true" style="font-size: 22px;">↑</span></a>
+      </div>
+      <a class="footer-mark" href="#top" aria-label="Mendota AI home" style="display: flex; align-items: center; gap: 30px; width: max-content; max-width: 100%; font-family: var(--font-display); font-size: clamp(80px, 17vw, 260px); line-height: .9; font-weight: 700; letter-spacing: -.02em; color: var(--blue); text-decoration: none;"><img src="../logo.svg" alt="" width="36" height="32" style="width: clamp(44px, 8vw, 120px); height: auto; filter: brightness(0) saturate(100%) invert(63%) sepia(75%) saturate(2160%) hue-rotate(152deg) brightness(99%) contrast(104%);">mendota</a>
+      <div style="display: flex; flex-wrap: wrap; justify-content: space-between; gap: 16px; border-top: 1px solid #eae1dc33; padding-top: 20px; font-size: 13px; color: var(--slate-2);"><span>© 2026 Mendota AI</span><span class="footer-links"><a href="../careers/">Careers</a><a href="mailto:contact@mendota.ai">contact@mendota.ai</a><span>San Francisco, CA</span></span></div>
+    </div>
+  </footer>
+
+</div>
+</body></html>
