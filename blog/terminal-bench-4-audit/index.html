@@ -78,7 +78,7 @@
 <li><strong>Margin.</strong> Does the reference clear every threshold by 2x?</li>
 </ol>
 <p>The last criterion is about failures. When models fail a fair task, they fail it in different ways. When every run fails the same check, or every failure is one check short of passing, the shared cause is usually the task. We hold such failures as ambiguous until the rule they broke is found in the task's own text.</p>
-<p>Packaging rules from our own delivery contract, such as resource limits, report formats and wall-clock caps, were not scored. Being too easy is not a defect either. A check that passes without the work is.</p>
+<p>Packaging rules, such as resource limits, report formats and wall-clock caps, were not scored. Being too easy is not a defect either. A check that passes without the work is.</p>
 
 <h2 id="method">Method</h2>
 <ul>
@@ -123,8 +123,8 @@
 <p>15 tasks passed: <code>atrx-vep-crispr</code>, <code>fin-saccr-rwa</code>, <code>formal-crypto</code>, <code>heat-pump-warranty</code>, <code>hof-topology-interpenetration</code>, <code>interleaved-vigenere</code>, <code>layout-config-recreation2</code>, <code>pretrain-shard-corruption</code>, <code>react-lead-form</code>, <code>risk-scorer-replay</code>, <code>satb-audio-transcription</code>, <code>shadow-relay</code>, <code>sound-change-cascade</code>, <code>uefi-bootkit</code>, <code>wdm-design</code>. They have things in common. The instruction states the quantities that decide the reward. The expected values can be recomputed from agent-visible inputs, and for several of them our auditors did so. The verifier sees only the declared output artifact.</p>
 <p>The benchmark is also being maintained. Every task already ran its verifier in a separate container in release 4.0.0. Between 4.0.0 and 4.1.0, 89 commits touched the task tree, and the verifier changed in all 66 tasks: submissions were moved into unprivileged workers, reward files were locked down, and checks were added to reject shortcuts that had passed. In the same period no <code>instruction.md</code> changed. That is the pattern in our results. Isolation has been hardened, and bypass findings are now the minority (9 of 81). The specification gap is untouched, and hardening a verifier cannot close it. Only the task text can.</p>
 
-<h3>Agreement with an independent review</h3>
-<p><a href="https://benchmarks-last-exam.com/blog/terminal-bench-4-review/">Benchmarks' Last Exam</a> reviewed release 4.0.0 by hand and refused 50 of 66 tasks. Our auditors did not see that review. On a later release, with a different method, 39 tasks are refused by both, 10 only by us, and 11 only by them. In three of the tasks only they refuse (<code>atrx-vep-crispr</code>, <code>fin-saccr-rwa</code>, <code>satb-audio-transcription</code>), our auditors found the same defect and rated it medium. Others changed between the two releases.</p>
+<h3>Cross-check against an independent review</h3>
+<p><a href="https://benchmarks-last-exam.com/blog/terminal-bench-4-review/">Benchmarks' Last Exam</a> reviewed release 4.0.0 and refused 50 of 66 tasks. We have no affiliation with that project, and our auditors did not see its review, so the two sets of verdicts were reached independently. On a later release, with a different method, 39 tasks are refused by both, 10 only by us, and 11 only by them. In three of the tasks only they refuse (<code>atrx-vep-crispr</code>, <code>fin-saccr-rwa</code>, <code>satb-audio-transcription</code>), our auditors found the same defect and rated it medium. Others changed between the two releases.</p>
 
 <h2 id="limits">Limits</h2>
 <ul>
