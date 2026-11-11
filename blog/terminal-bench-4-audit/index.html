@@ -5,10 +5,10 @@
   <meta name="theme-color" content="#f1ae9b">
   <meta name="description" content="49 of 66 public tasks fail the bar we use for RL environments. In 42 of them the verifier grades something the instruction never states.">
   <meta name="author" content="Mendota AI Research Team">
-  <title>Terminal-Bench 4, audited for post-training — Mendota AI</title><link rel="icon" href="../../logo.svg">
+  <title>It&#x27;s Not You, It&#x27;s the Benchmark — Mendota AI</title><link rel="icon" href="../../logo.svg">
   <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;600;700&family=DM+Sans:wght@400;450;500;600&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="../../styles.css?v=dusk-8"><script src="../../script.js?v=dusk-1" defer></script>
+  <link rel="stylesheet" href="../../styles.css?v=dusk-9"><script src="../../script.js?v=dusk-1" defer></script>
 </head>
 <body>
 <a class="skip-link" href="#report">Skip to the report</a>
@@ -24,9 +24,10 @@
   <section class="page-hero post-hero" aria-labelledby="post-title">
     <div style="max-width: 1600px; margin: 0 auto; position: relative; z-index: 1;">
       <a class="jd-back" href="../"><span aria-hidden="true">←</span> All posts</a>
-      <h1 id="post-title">We audited Terminal-Bench 4 for post-training</h1>
+      <h1 id="post-title">It's Not You, It's the Benchmark</h1>
+      <p class="post-sub">Auditing task validity and reward reliability in Terminal-Bench 4</p>
       <p class="post-dek">49 of 66 public tasks fail the bar we use for RL environments. In 42 of them the verifier grades something the instruction never states.</p>
-      <p class="jd-meta"><span>Mendota AI Research Team</span><i>·</i><span>BenchParadox technical report</span><i>·</i><span>November 11, 2026</span></p>
+      <p class="jd-meta"><span>Mendota AI Research Team</span><i>·</i><span>Technical report</span><i>·</i><span>November 11, 2026</span><i>·</i><a href="terminal-bench-4-audit.pdf">Download PDF</a></p>
     </div>
   </section>
 
@@ -52,7 +53,7 @@
   <li><strong>The rule is hidden.</strong> A threshold or convention that exists only in the test file cannot be discovered by engineering. The model can only guess, and guessing does not transfer.</li>
   <li><strong>The verdict depends on time or luck.</strong> Environments are replayed weeks later, paused between turns, and run on other machines. A reward that moves with any of these is noise.</li>
 </ul>
-<p>This is the paradox in the title of the project. A model can climb a benchmark by fitting the verifier while the capability the benchmark names stays flat. Before a score, or a gradient, is trusted, each task has to be checked.</p>
+<p>The result is a paradox. A model can climb a benchmark by fitting the verifier while the capability the benchmark names stays flat, and a model can fail a task it solved. Before a score, or a gradient, is trusted, each task has to be checked.</p>
 
 <h2 id="criteria">Our criteria for a Harbor task</h2>
 <p>A Harbor task is an instruction, an environment, a reference solution, and a verifier that writes a reward. We use these criteria when we build tasks, and the audit applies them unchanged.</p>
