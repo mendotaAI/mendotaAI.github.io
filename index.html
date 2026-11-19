@@ -7,7 +7,7 @@
   <title>Mendota AI — The next frontier.</title><link rel="icon" href="logo.svg">
   <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;600;700&family=DM+Sans:wght@400;450;500;600&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css?v=dusk-11"><script src="script.js?v=dusk-1" defer></script>
+  <link rel="stylesheet" href="styles.css?v=dusk-13"><script src="script.js?v=dusk-1" defer></script>
 </head>
 <body>
 <a class="skip-link" href="#research">Skip to research</a>
@@ -84,6 +84,8 @@
         <p class="pf-lede">Mendota is not a data vendor. It is one end-to-end post-training pipeline that audits, repairs and selects data, defines the RL environments, and tunes the training recipe for each model, so a small, verified dataset moves the metrics that matter.</p>
       </div>
 
+      <figure class="md-shot pf-shot"><img src="assets/img/product-pipeline.jpg" alt="Illustration: raw data blocks on a conveyor pass through audit, repair and review gates and stack into a single cyan monolith" width="1536" height="1024" loading="lazy" decoding="async"></figure>
+
       <ol class="pf-flow" aria-label="The Mendota pipeline">
         <li><span class="pf-no">01</span><h3>Audit</h3><p>Every sample is audited and continuously monitored. Leakage, contamination, broken labels and unverifiable answers are stopped at the door.</p></li>
         <li><span class="pf-no">02</span><h3>Repair</h3><p>Flawed data is fixed, not just filtered: corrected answers, rebuilt tests, re-run verifiers. Good signal is recovered instead of thrown away.</p></li>
@@ -123,17 +125,7 @@
       <article class="md-card md-card-wide" style="display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 0; padding: 0; overflow: hidden;">
         <span class="md-card-rim"></span>
         <div style="background: var(--sky); border-right: 2px solid var(--line-strong); min-height: 240px; position: relative;">
-          <svg viewBox="0 0 800 420" preserveAspectRatio="xMidYMid slice" aria-hidden="true" style="position: absolute; inset: 0; width: 100%; height: 100%;">
-            <g class="far" style="fill: var(--slate-2); opacity: var(--haze);"><polygon points="80,230 80,120 140,100 200,120 200,230"/><polygon points="260,230 260,160 360,160 360,230"/><polygon points="600,230 600,80 680,60 760,80 760,230"/><polygon points="420,230 420,190 520,190 520,230"/></g>
-            <polygon style="fill: var(--bone);" points="0,230 800,230 800,420 0,420"/>
-            <polygon style="fill: var(--bone-3);" points="0,230 240,230 80,420 0,420"/>
-            <g style="stroke: var(--void); stroke-opacity: .2; stroke-width: 1;"><line x1="0" y1="290" x2="800" y2="270"/><line x1="0" y1="350" x2="800" y2="320"/><line x1="200" y1="230" x2="150" y2="420"/><line x1="400" y1="230" x2="380" y2="420"/><line x1="600" y1="230" x2="610" y2="420"/></g>
-            <polygon class="cast" style="fill: var(--cast);" points="470,330 550,340 800,420 640,420"/>
-            <polygon style="fill: var(--blue-deep);" points="520,120 550,134 550,340 520,330"/>
-            <rect style="fill: var(--blue);" x="420" y="120" width="100" height="210"/>
-            <polygon style="fill: var(--blue-lit);" points="420,120 520,120 550,134 450,134"/>
-            <line style="stroke: var(--rim); stroke-width: 2;" x1="421" y1="122" x2="421" y2="328"/>
-          </svg>
+          <img class="md-fill" src="assets/img/infrabench.jpg" alt="Illustration: a figure walks through a city of server racks toward one rack glowing with an incident" width="1536" height="1024" loading="lazy" decoding="async">
         </div>
         <div style="padding: var(--space-3) var(--space-4); display: flex; flex-direction: column; justify-content: center; gap: 0;">
           <h3 style="margin: 0 0 8px; font-size: clamp(36px, 4vw, 52px);">InfraBench</h3>
@@ -151,14 +143,7 @@
           <a class="md-text-link" href="https://arxiv.org/abs/2603.29357" style="align-self: flex-start;">Read BenchScope <span aria-hidden="true">↗&#xFE0E;</span></a>
         </div>
         <div class="md-card-art" style="margin: 0; height: auto; min-height: 240px; border-bottom: 0; border-left: 2px solid var(--line-strong);">
-          <svg viewBox="0 0 800 420" preserveAspectRatio="xMidYMid slice" aria-hidden="true" style="position: absolute; inset: 0;">
-            <g class="far"><polygon points="40,230 40,130 110,110 180,130 180,230"/><polygon points="640,230 640,100 710,80 780,100 780,230"/></g>
-            <polygon class="floor" points="0,230 800,230 800,420 0,420"/><polygon class="floor-shade" points="0,230 220,230 60,420 0,420"/>
-            <polygon class="cast" points="250,330 280,336 400,420 330,420"/><rect class="mono" x="200" y="150" width="50" height="180"/><polygon class="mono-shade" points="250,150 280,158 280,336 250,330"/>
-            <polygon class="cast" points="370,330 400,336 520,420 450,420"/><rect class="mono" x="320" y="230" width="50" height="100"/><polygon class="mono-shade" points="370,230 400,238 400,336 370,330"/>
-            <polygon class="cast" points="490,330 520,336 640,420 570,420"/><rect class="mono" x="440" y="100" width="50" height="230"/><polygon class="mono-shade" points="490,100 520,108 520,336 490,330"/>
-            <polygon class="cast" points="610,330 640,336 760,420 690,420"/><rect class="mono" x="560" y="260" width="50" height="70"/><polygon class="mono-shade" points="610,260 640,268 640,336 610,330"/>
-          </svg>
+          <img class="md-fill" src="assets/img/benchscope.jpg" alt="Illustration: a lens over a row of benchmark bars; inside it the bars are cyan, outside they fade to grey" width="1536" height="1024" loading="lazy" decoding="async">
         </div>
       </article>
     </div>
@@ -227,6 +212,7 @@
     <div style="max-width: 1600px; margin: 0 auto; display: flex; flex-direction: column; gap: var(--space-5);">
       <span class="md-chapter"><span class="md-chapter-title" style="border-left: 0; padding-left: 0;">The lab</span></span>
       <h2 id="lab-title" style="margin: 0; max-width: 1000px; font-family: var(--font-display); font-size: clamp(48px, 7vw, 96px); line-height: .9; font-weight: 600; letter-spacing: -.015em;">The next frontier<br>is what AI <span style="color: var(--blue-lit);">can do.</span></h2>
+      <figure class="md-shot lab-shot"><img src="assets/img/lab-skyline.jpg" alt="Illustration: two researchers at a whiteboard on a rooftop lab overlooking a bay at dusk" width="1536" height="1024" loading="lazy" decoding="async"></figure>
       <div class="cols" style="max-width: 1000px;">
         <p style="margin: 0; font-size: 17px; line-height: 1.7;">Mendota AI explores the space between model capability and real-world consequence. Our starting point: rigorous benchmarks that make that gap visible.</p>
         <p style="margin: 0; font-size: 17px; line-height: 1.7;">Based in San Francisco, we're building toward intelligence grounded in the world's experience.</p>
