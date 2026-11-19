@@ -7,21 +7,37 @@
   <title>Mendota AI — The next frontier.</title><link rel="icon" href="logo.svg">
   <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;600;700&family=DM+Sans:wght@400;450;500;600&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css?v=dusk-9"><script src="script.js?v=dusk-1" defer></script>
+  <link rel="stylesheet" href="styles.css?v=dusk-11"><script src="script.js?v=dusk-1" defer></script>
 </head>
 <body>
 <a class="skip-link" href="#research">Skip to research</a>
 <div style="width: 100%; min-height: 100%; background: var(--bone); color: var(--void); font-family: var(--font-sans); display: flex; flex-direction: column;">
 
-  <header style="background: var(--sky); color: var(--void); padding: 0 var(--gutter);">
+  <header style="background: var(--bone); color: var(--void); padding: 0 var(--gutter);">
     <div class="md-header" style="max-width: 1600px; margin: 0 auto;">
       <a class="md-brand" href="#top" aria-label="Mendota AI home"><img src="logo.svg" alt="" width="36" height="32">mendota<span class="md-brand-ai">AI</span></a>
-      <nav class="md-nav" aria-label="Main navigation"><a href="#research">Research</a><a href="#work">Work with us</a><a href="#lab">The lab</a><a href="blog/">Blog</a><a href="careers/">Careers</a><a class="md-nav-cta" href="#research"><span class="md-nav-cta-long">Explore </span>research</a></nav>
+      <nav class="md-nav" aria-label="Main navigation"><a href="#product">Product</a><a href="#research">Research</a><a href="#work">Work with us</a><a href="#lab">The lab</a><a href="blog/">Blog</a><a href="careers/">Careers</a><a class="md-nav-cta" href="#research"><span class="md-nav-cta-long">Explore </span>research</a></nav>
     </div>
   </header>
 
   <section class="md-scene" id="top" aria-label="Scene one · The frontier">
     <svg viewBox="0 0 1600 700" preserveAspectRatio="xMidYMid slice" aria-hidden="true">
+      <defs>
+        <linearGradient id="dusk" x1="0" y1="0" x2="0" y2="1" gradientUnits="userSpaceOnUse" gradientTransform="scale(1,340)">
+          <stop offset="0" stop-color="var(--dusk-top)"/><stop offset=".55" stop-color="var(--sky)"/><stop offset="1" stop-color="var(--dusk-low)"/>
+        </linearGradient>
+        <clipPath id="sun-clip"><circle cx="810" cy="262" r="104"/></clipPath>
+      </defs>
+      <rect class="sky" x="0" y="0" width="1600" height="440" fill="url(#dusk)"/>
+      <g class="clouds" data-depth=".08">
+        <rect x="420" y="66" width="340" height="10" rx="5"/><rect x="500" y="86" width="190" height="8" rx="4"/>
+        <rect x="1040" y="44" width="380" height="10" rx="5"/><rect x="1180" y="64" width="190" height="8" rx="4"/>
+        <rect x="250" y="150" width="260" height="8" rx="4"/>
+      </g>
+      <g data-depth=".05">
+        <circle class="sun" cx="810" cy="262" r="104"/>
+        <g class="sun-cut" clip-path="url(#sun-clip)"><rect x="660" y="236" width="300" height="5"/><rect x="660" y="262" width="300" height="7"/><rect x="660" y="290" width="300" height="9"/></g>
+      </g>
       <g class="far" data-depth=".15">
         <polygon points="520,300 520,210 560,210 560,180 610,180 610,230 660,230 660,300"/>
         <polygon points="700,300 700,160 760,140 820,160 820,300"/>
@@ -58,6 +74,43 @@
     </svg>
     <div class="md-scene-label"><span class="md-chapter"><span class="md-chapter-title" style="border-left: 0; padding-left: 0;">The frontier</span></span></div>
     <div class="md-scene-copy"><h1>The next<br><em>frontier</em></h1><p>Intelligence begins in the real world. We build the foundations to bring it there.</p></div>
+  </section>
+
+  <section class="pf" id="product" aria-labelledby="product-title">
+    <div class="pf-wrap">
+      <span class="md-chapter"><span class="md-chapter-title" style="border-left: 0; padding-left: 0;">Product</span></span>
+      <div class="cols" style="align-items: end;">
+        <h2 id="product-title" class="pf-title">Less data.<br><em>Better models.</em></h2>
+        <p class="pf-lede">Mendota is not a data vendor. It is one end-to-end post-training pipeline that audits, repairs and selects data, defines the RL environments, and tunes the training recipe for each model, so a small, verified dataset moves the metrics that matter.</p>
+      </div>
+
+      <ol class="pf-flow" aria-label="The Mendota pipeline">
+        <li><span class="pf-no">01</span><h3>Audit</h3><p>Every sample is audited and continuously monitored. Leakage, contamination, broken labels and unverifiable answers are stopped at the door.</p></li>
+        <li><span class="pf-no">02</span><h3>Repair</h3><p>Flawed data is fixed, not just filtered: corrected answers, rebuilt tests, re-run verifiers. Good signal is recovered instead of thrown away.</p></li>
+        <li><span class="pf-no">03</span><h3>Review</h3><p>Repaired data goes through a second, independent review. Nothing reaches training without a check a verifier can reproduce.</p></li>
+        <li><span class="pf-no">04</span><h3>Select</h3><p>Model-aware selection: the right subdomains and difficulty for each target model's size and architecture, not one generic mix for all.</p></li>
+        <li><span class="pf-no">05</span><h3>Environments</h3><p>We define the RL environments, tasks and verifiable rewards, grounded in real-world work rather than toy sandboxes.</p></li>
+        <li><span class="pf-no">06</span><h3>Post-train</h3><p>The RL recipe is adapted per model, then the data flows into post-training. We measure the lift and feed results back to step one.</p></li>
+      </ol>
+
+      <div class="pf-grid">
+        <article class="pf-card">
+          <h3>Rigorous by default</h3>
+          <p>Strict auditing and live quality monitoring sit at the start of the pipeline, not at the end. Data quality is a guarantee, not a hope.</p>
+        </article>
+        <article class="pf-card">
+          <h3>Small data, real lift</h3>
+          <p>A targeted, verified slice beats a large generic dump. We optimize for gains per sample, not for volume.</p>
+        </article>
+        <article class="pf-card pf-card-models">
+          <h3>Tuned to every model</h3>
+          <p>Different models learn differently. We tailor both the data and the RL method to each one.</p>
+          <ul class="pf-chips" aria-label="Model shapes we tune for"><li>9B</li><li>27B</li><li>Dense</li><li>MoE</li><li>Any size</li></ul>
+        </article>
+      </div>
+
+      <div class="link-row"><a class="md-text-link" href="contact/?topic=post-training">Talk to us about your model <span aria-hidden="true">↗&#xFE0E;</span></a></div>
+    </div>
   </section>
 
   <section id="research" aria-labelledby="research-title" style="padding: var(--space-6) var(--gutter); background: var(--bone);">
