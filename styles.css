@@ -373,3 +373,6 @@ body{margin:0;background:var(--bone);color:var(--void);font-family:var(--font-sa
 .crew-copy h2{margin:0;font-family:var(--font-display);font-size:clamp(48px,6vw,88px);line-height:.9;font-weight:600;letter-spacing:-.015em}
 .crew-copy p{margin:0;max-width:480px;font-size:19px;line-height:1.55;color:var(--slate)}
 @media(max-width:800px){.post-row a{grid-template-columns:1fr}.post-thumb{max-width:420px}.crew-wrap{grid-template-columns:1fr;gap:var(--space-4)}.pf-shot{aspect-ratio:3/2;box-shadow:6px 6px 0 var(--blue-deep)}.lab-shot{aspect-ratio:2/1}.md-shot{box-shadow:5px 5px 0 var(--void)}}
+
+/* ---- headline: keep the boxed word from covering the line above ---- */
+.md-scene-copy h1 em,.page-hero h1 em{display:inline-block;line-height:.86;padding:.1em .08em .02em;margin-top:.1em}
