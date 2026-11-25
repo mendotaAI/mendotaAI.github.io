@@ -378,7 +378,19 @@ body{margin:0;background:var(--bone);color:var(--void);font-family:var(--font-sa
 .md-scene-copy h1 em,.page-hero h1 em{display:inline-block;line-height:.86;padding:.1em .08em .02em;margin-top:.1em}
 
 /* ---- NVIDIA Inception membership ---- */
-.lab-inception{margin:var(--space-3) 0 0;display:flex;flex-wrap:wrap;align-items:center;gap:12px 16px;font-size:16px;line-height:1.6;color:var(--slate)}
-.lab-inception strong{color:var(--void);font-weight:600}
-.lab-inception-tag{display:inline-block;padding:6px 12px;border:2px solid var(--void);box-shadow:4px 4px 0 var(--blue);font-size:12px;font-weight:600;letter-spacing:.12em;text-transform:uppercase;color:var(--void)}
 .tm-note{display:block;margin-top:6px;font-size:11px;opacity:.75}
+
+/* ---- supported by ---- */
+.backers{padding:var(--space-4) var(--gutter);background:var(--bone);border-bottom:2px solid var(--line-strong)}
+.backers-wrap{max-width:1600px;margin:0 auto;display:grid;grid-template-columns:auto minmax(0,1fr);align-items:center;gap:var(--space-3) var(--space-5)}
+.backers-label{margin:0;font-family:var(--font-sans);font-size:13px;font-weight:500;letter-spacing:.12em;text-transform:uppercase;color:var(--slate)}
+.backers-list{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:var(--space-3)}
+.backers-list li{display:flex;align-items:center;gap:14px;color:var(--void);opacity:.82;transition:opacity .15s}
+.backers-list li:hover{opacity:1}
+.bk-mark{width:34px;height:34px;flex:none}
+.bk-word{height:22px;width:auto;flex:none}
+.bk-name{display:flex;flex-direction:column;line-height:1.25}
+.bk-name b{font-size:15px;font-weight:600}
+.bk-name small{font-size:12px;letter-spacing:.06em;color:var(--slate)}
+@media(max-width:1100px){.backers-wrap{grid-template-columns:1fr}.backers-list{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:480px){.backers-list{grid-template-columns:1fr}}
